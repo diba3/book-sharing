@@ -6,29 +6,29 @@
 }
 
 .profileAvatar {
-  width: 200px; /* Larger avatar size */
-  height: 200px; /* Keep proportions */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .profileName {
-  font-size: 32px; /* Larger font for name */
+  font-size: 32px;
   margin-bottom: 16px;
   font-weight: bold;
   color: #6b4f4f;
 }
 
 .profileBio {
-  font-size: 20px; /* Larger font for bio */
+  font-size: 20px;
   margin: 16px 0;
   color: #6b4f4f;
 }
 
 .bioInput {
   width: 100%;
-  max-width: 600px; /* Larger input width */
+  max-width: 600px;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -89,9 +89,9 @@
 
 .postsContainer {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping to the next line */
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Center cards horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .postCard {
@@ -99,8 +99,8 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px; /* Fixed width for consistency */
-  height: 240px; /* Fixed height for consistency */
+  width: 200px;
+  height: 240px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
 }
 
 .postCard:hover {
-  transform: scale(1.05); /* Slight hover effect */
+  transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -118,26 +118,26 @@
   margin-bottom: 5px;
   color: #6b4f4f;
   font-weight: bold;
-  white-space: nowrap; /* Prevent title from wrapping */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis for long titles */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .postCard p {
   font-size: 12px;
   color: #424242;
   line-height: 1.4;
-  flex-grow: 1; /* Push content to fill available space */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  max-height: 120px; /* Limit height of the review text */
-  word-wrap: break-word; /* Ensure long words break to the next line */
-  white-space: normal; /* Allow text to wrap naturally */
-  padding-right: 5px; /* Add padding to prevent overlap with scrollbar */
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 120px;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-right: 5px;
 }
 
 .postCard p::-webkit-scrollbar {
-  width: 4px; /* Thinner scrollbar */
+  width: 4px;
 }
 
 .postCard p::-webkit-scrollbar-thumb {
@@ -153,7 +153,7 @@
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
-  align-self: flex-start; /* Align delete button to the top-left corner */
+  align-self: flex-start;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

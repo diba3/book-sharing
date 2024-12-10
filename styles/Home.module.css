@@ -17,21 +17,21 @@
 
 .buttonGroup {
   display: flex;
-  gap: 20px; /* Space between buttons */
+  gap: 20px;
 }
 
 .button {
-  width: 200px; /* Fixed width for both buttons */
-  height: 50px; /* Fixed height for consistency */
-  font-size: 18px; /* Same font size */
-  padding: 10px; /* Consistent padding */
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center-align the text */
+  justify-content: center;
 }
 
 .loginButton {

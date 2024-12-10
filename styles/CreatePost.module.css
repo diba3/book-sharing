@@ -2,52 +2,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align content to the top */
-  min-height: 100vh; /* Full viewport height */
-  padding: 20px 40px; /* Add padding for spacing */
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px 40px;
   background: linear-gradient(135deg, #f7f1e3, #ffe0b2);
 }
 
 .createPostTitle {
-  font-size: 36px; /* Larger title size */
+  font-size: 36px;
   font-weight: bold;
   color: #6b4f4f;
   margin-bottom: 20px;
-  margin-top: 40px; /* Push the title down slightly */
+  margin-top: 40px;
 }
 
 .createPostForm {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px; /* Limit form width */
+  max-width: 600px;
   background: white;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Additional spacing below the title */
+  margin-top: 20px;
 }
 
 .postInput {
-  font-size: 18px; /* Larger font size for input */
-  padding: 15px; /* Larger padding */
+  font-size: 18px;
+  padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .postTextarea {
-  font-size: 18px; /* Larger font size for textarea */
+  font-size: 18px;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  resize: vertical; /* Allow resizing vertically only */
-  height: 150px; /* Default height */
+  resize: vertical;
+  height: 150px;
 }
 
 .submitButton {
-  font-size: 18px; /* Larger button font size */
+  font-size: 18px;
   padding: 15px;
   background-color: #6b4f4f;
   color: white;
