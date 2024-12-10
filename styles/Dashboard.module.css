@@ -20,7 +20,10 @@
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
   gap: 1rem;
 }
 
@@ -36,6 +39,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 220px; /* Fixed height for consistent sizing */
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 .postCard:hover {
@@ -48,6 +52,9 @@
   margin-bottom: 10px;
   color: #6b4f4f;
   font-weight: bold;
+  white-space: nowrap; /* Prevent wrapping of long text */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long titles */
 }
 
 .postCard p {
@@ -58,16 +65,18 @@
   flex-grow: 1;
   max-height: 120px; /* Fixed height for content area */
   overflow-y: auto; /* Enable vertical scrolling for long content */
-  padding-right: 5px;
+  padding-right: 5px; /* Padding to prevent scrollbar overlap */
+  white-space: normal; /* Allow text wrapping for review content */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.postsContainer::-webkit-scrollbar {
-  width: 8px; /* Vertical scrollbar width */
+.postCard p::-webkit-scrollbar {
+  width: 6px;
 }
 
-.postsContainer::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 5px;
+.postCard p::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
 }
 
 .postTitle {
