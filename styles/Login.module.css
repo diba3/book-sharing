@@ -1,0 +1,78 @@
+.loginContainer {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  height: 100vh;
+  background: linear-gradient(135deg, #f7f1e3, #ffe0b2);
+}
+
+.loginForm {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  gap: 1rem; /* Add space between form elements */
+}
+
+.loginFormTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #6b4f4f;
+  font-weight: bold;
+}
+
+.loginInput {
+  width: 100%;
+  max-width: 300px; /* Ensure inputs are not too wide */
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  text-align: center; /* Optional: center the text inside the input */
+}
+
+.loginInput:focus {
+  border-color: #6b4f4f;
+  outline: none;
+}
+
+.loginButton {
+  width: 100%;
+  max-width: 300px;
+  background-color: #6b4f4f;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+  background-color: #8b5e5e;
+  transform: scale(1.02);
+}
+
+.alternativeOption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b4f4f;
+}
+
+.alternativeOption a {
+  color: #8b5e5e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.alternativeOption a:hover {
+  text-decoration: underline;
+}

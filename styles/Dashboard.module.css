@@ -1,0 +1,93 @@
+.dashboardContainer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboardTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.postCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px; /* Fixed height for consistent sizing */
+}
+
+.postCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.postCard h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #6b4f4f;
+  font-weight: bold;
+}
+
+.postCard p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  max-height: 120px; /* Fixed height for content area */
+  overflow-y: auto; /* Enable vertical scrolling for long content */
+  padding-right: 5px;
+}
+
+.postsContainer::-webkit-scrollbar {
+  width: 8px; /* Vertical scrollbar width */
+}
+
+.postsContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.postTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.postContent {
+  margin-bottom: 1rem;
+  color: #6b4f4f;
+}
+
+.postAuthor {
+  font-size: 0.9rem;
+  color: #6b4f4f;
+}
+
+.postDate {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #8b5e5e;
+}

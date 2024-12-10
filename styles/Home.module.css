@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #f7f1e3, #ffe0b2);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6b4f4f;
+  margin-bottom: 40px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+.button {
+  width: 200px; /* Fixed width for both buttons */
+  height: 50px; /* Fixed height for consistency */
+  font-size: 18px; /* Same font size */
+  padding: 10px; /* Consistent padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-align the text */
+}
+
+.loginButton {
+  background-color: #6b4f4f;
+  color: white;
+}
+
+.loginButton:hover {
+  background-color: #8b5e5e;
+  transform: scale(1.05);
+}
+
+.createButton {
+  background-color: #6b4f4f;
+  color: white;
+}
+
+.createButton:hover {
+  background-color: #8b5e5e;
+  transform: scale(1.05);
+}

@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #6b4f4f;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.headerLogo {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navButton {
+  background-color: #8b5e5e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem; /* Larger button size */
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #a76d6d;
+  transform: scale(1.05); /* Slight zoom effect */
+}
