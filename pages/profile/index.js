@@ -16,6 +16,7 @@ import styles from "../../styles/Profile.module.css";
 
 export default function Profile() {
   const [user, setUser] = useState(null);
+  const [name, setName] = useState(""); // State for user's name
   const [bio, setBio] = useState("");
   const [profilePicture, setProfilePicture] = useState("");
   const [selectedAvatar, setSelectedAvatar] = useState("");
@@ -39,6 +40,7 @@ export default function Profile() {
         return;
       }
       setUser(currentUser);
+      setName(currentUser.displayName || "Anonymous User"); // Default to "Anonymous User" if no name
 
       try {
         // Fetch user profile
@@ -116,6 +118,7 @@ export default function Profile() {
           alt="Profile Avatar"
           className={styles.profileAvatar}
         />
+        <h1 className={styles.profileName}>{name}</h1> {/* Display user name */}
         {isEditing ? (
           <>
             <textarea
@@ -158,7 +161,6 @@ export default function Profile() {
             </button>
           </>
         )}
-
         {/* Section for User Posts */}
         <section className={styles.postsSection}>
           <h2 className={styles.postsTitle}>Your Posts</h2>
